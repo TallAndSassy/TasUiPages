@@ -1,0 +1,45 @@
+{
+    "name": "tallandsassy/tasuipages",
+    "description": ":package_description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "JJ Rohrer",
+            "email": "jj.github@rohrer.org",
+            "homepage": "https://www.eleganttechnologies.com"
+        }
+    ],
+    "homepage": "https://github.com/tallandsassy/tasuipages",
+    "keywords": ["Laravel", "TasUiPages"],
+    "require": {
+        "illuminate/support": "~5|~6|~7|~8",
+        "spatie/laravel-menu": "^3.6"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8.0|~9.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3|~4|~5|~6",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TallAndSassy\\TasUiPages\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TallAndSassy\\TasUiPages\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TallAndSassy\\TasUiPages\\TasUiPagesServiceProvider"
+            ],
+            "aliases": {
+                "TasUiPages": "TallAndSassy\\TasUiPages\\Facades\\TasUiPages"
+            }
+        }
+    }
+}
